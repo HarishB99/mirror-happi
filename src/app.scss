@@ -1,0 +1,35 @@
+@import "@material/button/mdc-button";
+@import "@material/list/mdc-list";
+@import "@material/drawer/mdc-drawer";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    // color: blue;
+    display: flex;
+    height: 100vh;
+}
+
+.mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+}
+
+.main-content {
+    overflow: auto;
+    height: 100%;
+}
+
+.app-bar {
+    position: absolute;
+}
+
+.google-signin-button {
+    @include mdc-button-ink-color(teal);
+    @include mdc-states(teal);
+    margin: 2.5%;
+}
