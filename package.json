@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "pretest": "npm run build",
+    "test": "firebase serve --only hosting",
+    "start": "webpack-dev-server",
+    "build": "node_modules/.bin/webpack",
+    "predeploy": "npm run build",
+    "deploy": "firebase deploy",
+    "predeploymin": "npm run build",
+    "deploymin": "firebase deploy --only hosting"
   },
   "keywords": [],
   "author": "",
