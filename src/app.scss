@@ -28,6 +28,19 @@ body {
     position: absolute;
 }
 
+#profile {
+    min-height: 25% !important;
+}
+
+#email, #name {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(255, 255, 255);
+}
+
+#name {
+    margin-top: 35%;
+}
+
 .google-signin-button {
     @include mdc-button-ink-color(teal);
     @include mdc-states(teal);

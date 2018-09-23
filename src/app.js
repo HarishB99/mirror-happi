@@ -16,6 +16,9 @@ topAppBar.setScrollTarget(document.getElementById('main-content'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
     drawer.open = !drawer.open;
 });
+// document.getElementById('menu').addEventListener('click', () => {
+    // drawer.open = !drawer.open;
+// });
 
 const ripple = new MDCRipple(google_signin_btn);
 
@@ -43,5 +46,8 @@ firebase.auth().onAuthStateChanged(user => {
     if (typeof user !== undefined && user) {
         google_signin_btn.style.display = 'none';
         document.querySelector('.content').innerHTML = `Greetings ${user.displayName}!`;
+        document.getElementById('name').innerHTML = user.displayName;
+        document.getElementById('email').innerHTML = user.email;
+        document.getElementById('profile').style.background = `url('${user.photoURL}') center / cover`;
     }
 });

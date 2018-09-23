@@ -10,7 +10,60 @@
     <script src="scripts/app.js" async></script>
 </head>
 <body>
-    <aside class="mdc-drawer mdc-drawer--dismissible">
+    <aside class="mdc-drawer mdc-drawer--modal">
+        <!-- <div class="mdc-drawer__content">
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Outgoing
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts
+                </a>
+            </nav>
+        </div> -->
+        <div id="profile" class="mdc-drawer__header">
+            <h3 class="mdc-drawer__title" id="name">Mail</h3>
+            <h6 class="mdc-drawer__subtitle" id="email">email@material.io</h6>
+        </div>
+        <div class="mdc-drawer__content">
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Outgoing
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts
+                </a>
+            </nav>
+        </div>
+    </aside>
+    
+    <div class="mdc-drawer-scrim">
+    </div>
+    <div>
+        <header class="mdc-top-app-bar app-bar" id="app-bar">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <a href="#" id="menu" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                    <span class="mdc-top-app-bar__title">Mirror Happi</span>
+                </section>
+            </div>
+        </header>
+        <main class="main-content" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust">
+                <button id="google-signin-button" class="google-signin-button mdc-button">
+                    Sign in with Google
+                </button>
+                <div class="content"></div>
+            </div>
+        </main>
+    </div>
+    <!-- <aside class="mdc-drawer mdc-drawer--dismissible">
         <div class="mdc-drawer__content">
             <div class="mdc-list">
                 <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
@@ -24,9 +77,9 @@
                 </a>
             </div>
         </div>
-    </aside>
+    </aside> -->
 
-    <div class="mdc-drawer-app-content">
+    <!-- <div class="mdc-drawer-app-content">
         <header class="mdc-top-app-bar app-bar" id="app-bar">
             <div class="mdc-top-app-bar__row">
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
@@ -44,6 +97,6 @@
                 <div class="content"></div>
             </div>
         </main>
-    </div>
+    </div> -->
 </body>
 </html>
