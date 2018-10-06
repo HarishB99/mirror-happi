@@ -19,7 +19,11 @@
   "private": true,
   "devDependencies": {
     "@material/button": "^0.39.3",
+    "@material/card": "^0.40.0",
     "@material/drawer": "^0.39.3",
+    "@material/fab": "^0.40.0",
+    "@material/icon-button": "^0.40.0",
+    "@material/icon-toggle": "^0.40.0",
     "@material/ripple": "^0.39.3",
     "@material/top-app-bar": "^0.39.3",
     "autoprefixer": "^9.1.5",

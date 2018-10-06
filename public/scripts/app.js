@@ -2853,7 +2853,7 @@ google_signin_btn.addEventListener('click', function () {
 _app2.default.auth().onAuthStateChanged(function (user) {
     if ((typeof user === "undefined" ? "undefined" : _typeof(user)) !== undefined && user) {
         google_signin_btn.style.display = 'none';
-        document.querySelector('.content').innerHTML = "Greetings " + user.displayName + "!";
+        document.querySelector('.mdc-card__actions').innerHTML = "Greetings " + user.displayName + "!";
         document.getElementById('name').innerHTML = user.displayName;
         document.getElementById('email').innerHTML = user.email;
         document.getElementById('profile').style.background = "url('" + user.photoURL + "') center / cover";
